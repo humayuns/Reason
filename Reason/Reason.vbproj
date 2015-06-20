@@ -121,6 +121,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Reaon_screenshot.png" />
     <Content Include="reason.ico" />
     <Content Include="reason.png" />
     <None Include="Resources\reason.ico" />
