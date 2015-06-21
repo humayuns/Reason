@@ -27,6 +27,8 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnDrawForm = New System.Windows.Forms.Button()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,6 +54,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnDrawForm)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(574, 329)
@@ -68,6 +71,15 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'btnDrawForm
+        '
+        Me.btnDrawForm.Location = New System.Drawing.Point(6, 32)
+        Me.btnDrawForm.Name = "btnDrawForm"
+        Me.btnDrawForm.Size = New System.Drawing.Size(75, 23)
+        Me.btnDrawForm.TabIndex = 0
+        Me.btnDrawForm.Text = "DrawForm"
+        Me.btnDrawForm.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -80,6 +92,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Reason"
+        Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -89,5 +102,6 @@ Partial Class Form1
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents btnDrawForm As System.Windows.Forms.Button
 
 End Class
