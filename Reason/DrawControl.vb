@@ -9,6 +9,7 @@
             Dim g = Me.CreateGraphics()
 
             g.DrawLine(Pens.Black, x1, y1, e.X, e.Y)
+            g.DrawPie(Pens.AliceBlue, New Rectangle(x1, y1, e.X, e.Y), 0, 360)
 
             x1 = e.X
             y1 = e.Y
