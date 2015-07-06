@@ -26,8 +26,8 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnDrawForm = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -62,15 +62,6 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "The Stage"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Reason.My.Resources.Resources.reason1
-        Me.PictureBox1.Location = New System.Drawing.Point(551, 347)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(38, 37)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'btnDrawForm
         '
         Me.btnDrawForm.Location = New System.Drawing.Point(6, 32)
@@ -79,6 +70,15 @@ Partial Class Form1
         Me.btnDrawForm.TabIndex = 0
         Me.btnDrawForm.Text = "DrawForm"
         Me.btnDrawForm.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Reason.My.Resources.Resources.reason1
+        Me.PictureBox1.Location = New System.Drawing.Point(551, 347)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(38, 37)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
