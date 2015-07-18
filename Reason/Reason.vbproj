@@ -74,10 +74,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DrawControl.Designer.vb">
+    <Compile Include="Controls\DrawControl.Designer.vb">
       <DependentUpon>DrawControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="DrawControl.vb">
+    <Compile Include="Controls\DrawControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DrawForm.Designer.vb">
@@ -111,7 +111,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DrawControl.resx">
+    <EmbeddedResource Include="Controls\DrawControl.resx">
       <DependentUpon>DrawControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DrawForm.resx">
