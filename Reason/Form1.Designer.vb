@@ -28,6 +28,7 @@ Partial Class Form1
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnDrawForm = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnOpenGL = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,6 +55,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnOpenGL)
         Me.GroupBox1.Controls.Add(Me.btnDrawForm)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -80,6 +82,15 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'btnOpenGL
+        '
+        Me.btnOpenGL.Location = New System.Drawing.Point(87, 32)
+        Me.btnOpenGL.Name = "btnOpenGL"
+        Me.btnOpenGL.Size = New System.Drawing.Size(75, 23)
+        Me.btnOpenGL.TabIndex = 1
+        Me.btnOpenGL.Text = "OpenGL"
+        Me.btnOpenGL.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -103,5 +114,6 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btnDrawForm As System.Windows.Forms.Button
+    Friend WithEvents btnOpenGL As System.Windows.Forms.Button
 
 End Class
