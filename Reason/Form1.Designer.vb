@@ -26,9 +26,10 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnOpenGL = New System.Windows.Forms.Button()
         Me.btnDrawForm = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnOpenGL = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,6 +56,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.btnOpenGL)
         Me.GroupBox1.Controls.Add(Me.btnDrawForm)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 12)
@@ -63,6 +65,15 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "The Stage"
+        '
+        'btnOpenGL
+        '
+        Me.btnOpenGL.Location = New System.Drawing.Point(87, 32)
+        Me.btnOpenGL.Name = "btnOpenGL"
+        Me.btnOpenGL.Size = New System.Drawing.Size(75, 23)
+        Me.btnOpenGL.TabIndex = 1
+        Me.btnOpenGL.Text = "OpenGL"
+        Me.btnOpenGL.UseVisualStyleBackColor = True
         '
         'btnDrawForm
         '
@@ -82,14 +93,14 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'btnOpenGL
+        'ListBox1
         '
-        Me.btnOpenGL.Location = New System.Drawing.Point(87, 32)
-        Me.btnOpenGL.Name = "btnOpenGL"
-        Me.btnOpenGL.Size = New System.Drawing.Size(75, 23)
-        Me.btnOpenGL.TabIndex = 1
-        Me.btnOpenGL.Text = "OpenGL"
-        Me.btnOpenGL.UseVisualStyleBackColor = True
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"Area of Circle", "Slope of Curve", "Area under the Curve"})
+        Me.ListBox1.Location = New System.Drawing.Point(385, 19)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(183, 303)
+        Me.ListBox1.TabIndex = 2
         '
         'Form1
         '
@@ -115,5 +126,6 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btnDrawForm As System.Windows.Forms.Button
     Friend WithEvents btnOpenGL As System.Windows.Forms.Button
+    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
 
 End Class
