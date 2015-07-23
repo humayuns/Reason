@@ -23,4 +23,10 @@
 
         End If
     End Sub
+
+    Private Sub DrawControl_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+
+        x1 = e.X
+        y1 = e.Y
+    End Sub
 End Class
