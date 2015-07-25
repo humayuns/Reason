@@ -7,4 +7,8 @@
     Private Sub btnDrawForm_Click(sender As Object, e As EventArgs) Handles btnDrawForm.Click
         DrawForm.Show()
     End Sub
+
+    Private Sub btnChart_Click(sender As Object, e As EventArgs) Handles btnChart.Click
+        ChartForm.Show()
+    End Sub
 End Class
