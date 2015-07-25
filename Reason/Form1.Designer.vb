@@ -30,6 +30,7 @@ Partial Class Form1
         Me.btnOpenGL = New System.Windows.Forms.Button()
         Me.btnDrawForm = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,7 +42,7 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(407, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "the power of the mind to think, understand, and form judgments by a process of lo" & _
+        Me.Label1.Text = "the power of the mind to think, understand, and form judgments by a process of lo" &
     "gic."
         '
         'Label2
@@ -56,6 +57,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.btnOpenGL)
         Me.GroupBox1.Controls.Add(Me.btnDrawForm)
@@ -69,10 +71,10 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Area of Circle", "Slope of Curve", "Area under the Curve", "2D Plot", "3D Plot"})
-        Me.ListBox1.Location = New System.Drawing.Point(385, 19)
+        Me.ListBox1.Items.AddRange(New Object() {"Area of Circle", "Slope of Curve", "Area under the Curve", "2D Plot", "3D Plot", "Ability to Save", "Web Connected"})
+        Me.ListBox1.Location = New System.Drawing.Point(385, 32)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(183, 303)
+        Me.ListBox1.Size = New System.Drawing.Size(183, 290)
         Me.ListBox1.TabIndex = 2
         '
         'btnOpenGL
@@ -102,6 +104,16 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(382, 16)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(44, 16)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Todo:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -115,6 +127,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Reason"
         Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -127,5 +140,5 @@ Partial Class Form1
     Friend WithEvents btnDrawForm As System.Windows.Forms.Button
     Friend WithEvents btnOpenGL As System.Windows.Forms.Button
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-
+    Friend WithEvents Label3 As Label
 End Class
