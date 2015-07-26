@@ -9,10 +9,14 @@ Public Class ChartForm
         s.Name = "aline"
         'Change to a line graph.
         s.ChartType = SeriesChartType.Line
-        s.Points.AddXY("1990", 27)
-        s.Points.AddXY("1991", 15)
-        s.Points.AddXY("1992", 17)
+        s.Points.AddXY(10, 27)
+        s.Points.AddXY(20, 15)
+        s.Points.AddXY(30, 17)
         'Add the series to the Chart1 control.
         Chart1.Series.Add(s)
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
     End Sub
 End Class

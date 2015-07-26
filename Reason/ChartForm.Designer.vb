@@ -26,6 +26,7 @@ Partial Class ChartForm
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,18 +46,30 @@ Partial Class ChartForm
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(13, 319)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox1.Size = New System.Drawing.Size(297, 46)
+        Me.TextBox1.TabIndex = 1
+        '
         'ChartForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(324, 324)
+        Me.ClientSize = New System.Drawing.Size(322, 377)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Chart1)
         Me.Name = "ChartForm"
         Me.Text = "ChartForm"
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents TextBox1 As TextBox
 End Class
