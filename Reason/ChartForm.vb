@@ -25,7 +25,7 @@ Public Class ChartForm
         Chart1.Series.RemoveAt(0)
         'Create a new series and add data points to it.
         Dim s As New Series
-        s.Name = "aline"
+        s.Name = "Column"
         'Change to a line graph.
         s.ChartType = SeriesChartType.Column
 
