@@ -19,4 +19,20 @@ Public Class ChartForm
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
+
+    Private Sub btnDraw_Click(sender As Object, e As EventArgs) Handles btnDraw.Click
+
+        Chart1.Series.RemoveAt(0)
+        'Create a new series and add data points to it.
+        Dim s As New Series
+        s.Name = "aline"
+        'Change to a line graph.
+        s.ChartType = SeriesChartType.Column
+
+        For i = 0 To TextBox1.Text.Split(",").Count - 1
+            s.Points.AddXY(10 * i, TextBox1.Text.Split(",")(i))
+        Next
+        'Add the series to the Chart1 control.
+        Chart1.Series.Add(s)
+    End Sub
 End Class

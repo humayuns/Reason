@@ -27,6 +27,7 @@ Partial Class ChartForm
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnDraw = New System.Windows.Forms.Button()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -55,11 +56,21 @@ Partial Class ChartForm
         Me.TextBox1.Size = New System.Drawing.Size(297, 46)
         Me.TextBox1.TabIndex = 1
         '
+        'btnDraw
+        '
+        Me.btnDraw.Location = New System.Drawing.Point(13, 371)
+        Me.btnDraw.Name = "btnDraw"
+        Me.btnDraw.Size = New System.Drawing.Size(299, 23)
+        Me.btnDraw.TabIndex = 2
+        Me.btnDraw.Text = "Draw"
+        Me.btnDraw.UseVisualStyleBackColor = True
+        '
         'ChartForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(322, 377)
+        Me.ClientSize = New System.Drawing.Size(322, 402)
+        Me.Controls.Add(Me.btnDraw)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Chart1)
         Me.Name = "ChartForm"
@@ -72,4 +83,5 @@ Partial Class ChartForm
 
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnDraw As Button
 End Class
