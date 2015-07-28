@@ -26,12 +26,13 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnChart = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.btnOpenGL = New System.Windows.Forms.Button()
         Me.btnDrawForm = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnChart = New System.Windows.Forms.Button()
+        Me.btnDirectX = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -58,6 +59,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnDirectX)
         Me.GroupBox1.Controls.Add(Me.btnChart)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
@@ -69,6 +71,15 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "The Stage"
+        '
+        'btnChart
+        '
+        Me.btnChart.Location = New System.Drawing.Point(6, 61)
+        Me.btnChart.Name = "btnChart"
+        Me.btnChart.Size = New System.Drawing.Size(75, 23)
+        Me.btnChart.TabIndex = 4
+        Me.btnChart.Text = "Chart"
+        Me.btnChart.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -116,14 +127,14 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'btnChart
+        'btnDirectX
         '
-        Me.btnChart.Location = New System.Drawing.Point(6, 61)
-        Me.btnChart.Name = "btnChart"
-        Me.btnChart.Size = New System.Drawing.Size(75, 23)
-        Me.btnChart.TabIndex = 4
-        Me.btnChart.Text = "Chart"
-        Me.btnChart.UseVisualStyleBackColor = True
+        Me.btnDirectX.Location = New System.Drawing.Point(168, 32)
+        Me.btnDirectX.Name = "btnDirectX"
+        Me.btnDirectX.Size = New System.Drawing.Size(75, 23)
+        Me.btnDirectX.TabIndex = 5
+        Me.btnDirectX.Text = "DirectX"
+        Me.btnDirectX.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -153,4 +164,5 @@ Partial Class Form1
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnChart As Button
+    Friend WithEvents btnDirectX As Button
 End Class
