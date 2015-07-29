@@ -19,4 +19,12 @@
     Private Sub btnDirectX_Click(sender As Object, e As EventArgs) Handles btnDirectX.Click
         DirectXForm.Show()
     End Sub
+
+    Private Sub btnPlot2D_Click(sender As Object, e As EventArgs) Handles btnPlot2D.Click
+        Plot2DForm.Show()
+    End Sub
+
+    Private Sub btnPlot3D_Click(sender As Object, e As EventArgs) Handles btnPlot3D.Click
+        Plot3DForm.Show()
+    End Sub
 End Class

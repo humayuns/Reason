@@ -26,13 +26,15 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnDirectX = New System.Windows.Forms.Button()
         Me.btnChart = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.btnOpenGL = New System.Windows.Forms.Button()
         Me.btnDrawForm = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnDirectX = New System.Windows.Forms.Button()
+        Me.btnPlot2D = New System.Windows.Forms.Button()
+        Me.btnPlot3D = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -59,6 +61,8 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnPlot3D)
+        Me.GroupBox1.Controls.Add(Me.btnPlot2D)
         Me.GroupBox1.Controls.Add(Me.btnDirectX)
         Me.GroupBox1.Controls.Add(Me.btnChart)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -71,6 +75,15 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "The Stage"
+        '
+        'btnDirectX
+        '
+        Me.btnDirectX.Location = New System.Drawing.Point(168, 32)
+        Me.btnDirectX.Name = "btnDirectX"
+        Me.btnDirectX.Size = New System.Drawing.Size(75, 23)
+        Me.btnDirectX.TabIndex = 5
+        Me.btnDirectX.Text = "DirectX"
+        Me.btnDirectX.UseVisualStyleBackColor = True
         '
         'btnChart
         '
@@ -127,14 +140,23 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'btnDirectX
+        'btnPlot2D
         '
-        Me.btnDirectX.Location = New System.Drawing.Point(168, 32)
-        Me.btnDirectX.Name = "btnDirectX"
-        Me.btnDirectX.Size = New System.Drawing.Size(75, 23)
-        Me.btnDirectX.TabIndex = 5
-        Me.btnDirectX.Text = "DirectX"
-        Me.btnDirectX.UseVisualStyleBackColor = True
+        Me.btnPlot2D.Location = New System.Drawing.Point(87, 61)
+        Me.btnPlot2D.Name = "btnPlot2D"
+        Me.btnPlot2D.Size = New System.Drawing.Size(75, 23)
+        Me.btnPlot2D.TabIndex = 6
+        Me.btnPlot2D.Text = "Plot 2D"
+        Me.btnPlot2D.UseVisualStyleBackColor = True
+        '
+        'btnPlot3D
+        '
+        Me.btnPlot3D.Location = New System.Drawing.Point(168, 61)
+        Me.btnPlot3D.Name = "btnPlot3D"
+        Me.btnPlot3D.Size = New System.Drawing.Size(75, 23)
+        Me.btnPlot3D.TabIndex = 7
+        Me.btnPlot3D.Text = "Plot 3D"
+        Me.btnPlot3D.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -165,4 +187,6 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents btnChart As Button
     Friend WithEvents btnDirectX As Button
+    Friend WithEvents btnPlot3D As Button
+    Friend WithEvents btnPlot2D As Button
 End Class
