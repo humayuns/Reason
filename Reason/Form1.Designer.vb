@@ -107,7 +107,7 @@ Partial Class Form1
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"Area of Circle", "Slope of Curve", "Area under the Curve", "2D Plot", "3D Plot", "Ability to Save", "Web Connected"})
+        Me.ListBox1.Items.AddRange(New Object() {"Area of Circle", "Slope of Curve", "Area under the Curve", "2D Plot", "3D Plot", "Ability to Save", "Web Connected", "Wolfram Alpha Integration"})
         Me.ListBox1.Location = New System.Drawing.Point(385, 32)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(183, 290)
